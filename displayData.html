@@ -1,0 +1,13 @@
+<html>
+<script language="javascript">
+function RefreshImage(){
+document.picUnfiltered.src="03.png?a=" + String(Math.random()*99999999);
+document.picFiltered.src="04.png?a=" + String(Math.random()*99999999);
+setTimeout('RefreshImage()',50);
+}
+</script>
+<body onload="RefreshImage()">
+<img name="picUnfiltered" src="03.png">
+<img name="picFiltered"src="04.png">
+</body>
+</html>
